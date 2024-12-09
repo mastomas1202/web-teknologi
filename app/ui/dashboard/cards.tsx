@@ -4,7 +4,7 @@ import {
   UserGroupIcon,
   InboxIcon,
 } from '@heroicons/react/24/outline';
-import { lusitana } from '@/app/ui/fonts/fonts';
+import { lusitana } from '@/app/fonts';
 
 const iconMap = {
   collected: BanknotesIcon,
@@ -17,15 +17,16 @@ export default async function CardWrapper() {
   return (
     <>
       {/* NOTE: Uncomment this code in Chapter 9 */}
-
-      {/* <Card title="Collected" value={totalPaidInvoices} type="collected" />
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <Card title="Collected" value={totalPaidInvoices} type="collected" />
       <Card title="Pending" value={totalPendingInvoices} type="pending" />
       <Card title="Total Invoices" value={numberOfInvoices} type="invoices" />
       <Card
         title="Total Customers"
         value={numberOfCustomers}
         type="customers"
-      /> */}
+      />
+      </div>
     </>
   );
 }

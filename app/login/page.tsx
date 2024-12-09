@@ -1,6 +1,6 @@
 'use client'; //Penggunaan useActionState harus mencantumkan ini
 
-import { lusitana } from '@/app/ui/fonts/fonts';
+import { lusitana } from '@/app/fonts';
 import Image from 'next/image';
 import {
     AtSymbolIcon,
